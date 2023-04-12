@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float power(int, int);
+
+int main(){
+	int a, b;
+	cin>>a >>b;
+	cout<<"Hasil dari " <<a <<" pangkat " <<b <<" adalah " <<power(a,b);
+}
+
+float power(int x, int y){
+	int hasil;
+	hasil = pow(x, y);
+	return hasil;
+}
