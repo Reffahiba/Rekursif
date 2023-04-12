@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int baris(float, float, float);
+int deret(float, float, float);
+
+int main(){
+	int a, b, n;
+	cin>>a >>b >>n;
+	for(int i=1; i<=n; i++){
+		cout<<"Baris suku ke-" <<i <<" : " <<baris(a, b, i) <<endl;
+	}
+	cout<<"Jumlah deret dari suku ke- " <<n <<" adalah " <<deret(a,b,n);
+}
+
+int baris(float x, float y, float z){
+	int hasil = x+((z-1)*y);
+	return hasil;
+}
+
+int deret(float x, float y, float z){
+	int hasil = z/2 * (2*x + ((z-1)*y));
+	return hasil;
+}
