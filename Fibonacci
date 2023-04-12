@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int fibonacci(int);
+
+int main(){
+	int n;
+	cout<<"Masukkan Angka : "cin>>n;
+	for(int i=0; i<n; i++){
+		cout<<"Angka fibonacci ke-" <<i+1 <<" : " <<fibonacci(i) <<endl;
+	}
+	cout<<"Jumlah Fibonacci dari " <<n <<" angka adalah " <<fibonnaci(n);
+}
+
+int fibonacci(int x){
+	if(x == 0)
+		return 0;
+	else if(x == 1)
+		return 1;
+	else
+		return fibonacci(x-2)+fibonacci(x-1);
+} 
